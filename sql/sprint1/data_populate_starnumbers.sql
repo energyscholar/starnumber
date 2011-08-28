@@ -1,0 +1,33 @@
+-- SQL that populates the phones table with test data
+-- Created by Bruce
+
+
+DELETE FROM STARNUMBER.STARNUMBERS WHERE 1=1;
+
+INSERT INTO STARNUMBER.STARNUMBERS ( user_id, sn  )
+
+VALUES (
+1,
+'7827*7331'
+);
+
+INSERT INTO STARNUMBER.STARNUMBERS ( user_id, sn  )
+
+VALUES (
+2,
+'7827*7890'
+);
+
+INSERT INTO STARNUMBER.STARNUMBERS ( user_id, sn  )
+
+VALUES (
+3,
+'7827*1337'
+);
+
+
+
+
+commit;
+
+SELECT * FROM STARNUMBER.STARNUMBERS;

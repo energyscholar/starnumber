@@ -1,0 +1,22 @@
+-- script to populate starnumber.lines
+
+delete from starnumber.lines;
+
+INSERT INTO STARNUMBER.LINES (line_name, user_id, line_type_id)
+VALUES ( '7827*7829' , 2 , 1 );
+
+INSERT INTO STARNUMBER.LINES (line_name, user_id, line_type_id)
+VALUES ( 'DID Lux' , 2 , 1 );
+
+INSERT INTO STARNUMBER.LINES (line_name, user_id, line_type_id)
+VALUES ( 'The Internet' , 2 , 2 );
+
+INSERT INTO STARNUMBER.LINES (line_name, user_id, line_type_id)
+VALUES ( 'DID Logic' , 2 , 3 );
+
+INSERT INTO STARNUMBER.LINES (line_name, user_id, line_type_id)
+VALUES ( 'RD1' , 2 , 4 );
+
+INSERT INTO STARNUMBER.LINES (line_name, user_id, line_type_id)
+VALUES ( 'Lux Cell' , 2 , 5 );
+
