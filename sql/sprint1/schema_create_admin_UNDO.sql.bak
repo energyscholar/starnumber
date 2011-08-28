@@ -1,8 +1,0 @@
--- Table to DROP administrative comment strings for building Starnumber apps
---  Note that this feature is NOT implemented in a secure way, so do NOT 
--- allow any production systems to have this SQL in it!
-
-DROP TABLE IF EXISTS STARNUMBER.ADMIN_COMMENTS;
-
-
-commit;
