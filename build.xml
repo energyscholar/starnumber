@@ -1,0 +1,65 @@
+<?xml version="1.0" ?> 
+<project name="SNWebApp1" default="tomcat-start">
+
+	<path id="compile.classpath">
+		<fileset dir="WebContent/WEB-INF/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="init">
+		<mkdir dir="build/classes"/>
+		<mkdir dir="build/jsp"/>
+		<mkdir dir="dist" />
+	</target>
+	
+	<target name="compile" depends="init" >
+		<javac destdir="build/classes" debug="true" srcdir="src" includeantruntime="false">
+			<classpath refid="compile.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="war" depends="compile">
+		<war destfile="dist/SNWebApp.war" webxml="WebContent/WEB-INF/web.xml">
+			<fileset dir="WebContent"/>
+			<lib dir="WebContent/WEB-INF/lib"/>
+			<classes dir="build/classes"/>
+		</war>
+		
+	</target>
+	
+	<target name="clean">
+		<delete dir="dist" />
+		<delete dir="build" />
+
+	</target>
+	
+	<target name="deploy" depends="tomcat-stop,clean, war">
+		<delete dir="C:\apache\apache-tomcat-6.0.33\webapps\SNWebApp" />
+		<unwar src="dist/SNWebApp.war" dest="C:\apache\apache-tomcat-6.0.33\webapps\SNWebApp" />			
+	</target>
+	
+	<target name="tomcat-start" depends="deploy">
+	    <java jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+	        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+	    </java>
+	</target>
+	
+	<target name="tomcat-stop">
+	    <java jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+	        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+	        <arg line="stop"/>
+	    </java>
+	</target>
+	
+	<target name="tomcat-start-debug">
+	    <java jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+	        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+	        <jvmarg value="-Xdebug"/>	        
+	        <jvmarg value="-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n"/>
+	    </java>
+	</target>
+	
+	
+	
+</project>
