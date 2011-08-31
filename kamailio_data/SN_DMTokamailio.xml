@@ -1,0 +1,78 @@
+<user_profile id="3" user_id="3">								
+<name>testuser profile 3</name>								
+<user_name>testuser2</user_name>								
+<lines>								
+<line id="1" is_active="true" line_type_number="1">								
+<description>Inbound SN</description>								
+<name>My first starnumber</name>								
+<uri>7827*7829@starnumber.net</uri>								
+<line_profiles>								
+<line_profile id="1">								
+<name>Default</name>								
+<line_profile_settings>								
+<line_profile_setting id="1" setting_number="1" setting_value_type="Int">								
+<name>Ring On Destination Line ID</name>								
+<value>2</value>								
+</line_profile_setting>								
+<line_profile_setting id="4" setting_number="1" setting_value_type="Int">								
+<name>Ring On Destination Line ID</name>								
+<value>3</value>								
+</line_profile_setting>								
+<line_profile_setting id="5" setting_number="1" setting_value_type="Int">								
+<name>Ring On Destination Line ID</name>								
+<value>4</value>								
+</line_profile_setting>								
+</line_profile_settings>								
+</line_profile>								
+</line_profiles>								
+</line>								
+<line id="3" is_active="true" line_type_number="4">								
+<description>Registered Device</description>								
+<name>Registered Device</name>								
+<uri>Charlie@starnumber.net</uri>								
+<line_profiles>								
+<line_profile id="3">								
+<name>Default</name>								
+<line_profile_settings>								
+<line_profile_setting id="3" setting_number="2" setting_value_type="Varchar">								
+<name>redirect type. stateless, statefull, media</name>								
+<value>media</value>								
+</line_profile_setting>								
+</line_profile_settings>								
+</line_profile>								
+</line_profiles>								
+</line>								
+<line id="2" is_active="true" line_type_number="6">								
+<description>SIP URI Destination</description>								
+<name>Pbxes uri mmzade-29</name>								
+<uri>mmzade-29@pbxes.org</uri>								
+<line_profiles>								
+<line_profile id="2">								
+<name>Default</name>								
+<line_profile_settings>								
+<line_profile_setting id="2" setting_number="2" setting_value_type="Varchar">								
+<name>redirect type. stateless, statefull, media</name>								
+<value>stateless</value>								
+</line_profile_setting>								
+</line_profile_settings>								
+</line_profile>								
+</line_profiles>								
+</line>								
+<line id="4" is_active="true" line_type_number="6">								
+<description>SIP URI Destination</description>								
+<name>Bruce's sip2sip</name>								
+<uri>brucepjsip@sip2sip.info</uri>								
+<line_profiles>								
+<line_profile id="4">								
+<name>Default</name>								
+<line_profile_settings>								
+<line_profile_setting id="6" setting_number="2" setting_value_type="Varchar">								
+<name>redirect type. stateless, statefull, media</name>								
+<value>statefull</value>								
+</line_profile_setting>								
+</line_profile_settings>								
+</line_profile>								
+</line_profiles>								
+</line>								
+</lines>								
+</user_profile>								

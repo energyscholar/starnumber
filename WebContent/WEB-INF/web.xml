@@ -16,6 +16,16 @@
     <url-pattern>*.html</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>KamailioDBXMLServlet</servlet-name>
+    <servlet-class>com.starnumber.util.KamailioDBXMLServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>KamailioDBXMLServlet</servlet-name>
+    <url-pattern>/KamServlet</url-pattern>
+  </servlet-mapping>
+
   <welcome-file-list>
     <welcome-file>
       jsp/index.jsp
