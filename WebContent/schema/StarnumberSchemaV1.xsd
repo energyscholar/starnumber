@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="user_profile">
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="user_name" type="xs:string"/>
+    <xs:element name="line" minOccurs="1" maxOccurs="unbounded">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="description" type="xs:string"/>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="uri" type="xs:string"/>          
+          <xs:element name="line_profile"  minOccurs="1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="line_profile_setting"  minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="name" type="xs:string"/>
+                      <xs:element name="value" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:integer" use="required"/>
+                    <xs:attribute name="setting_number" type="xs:integer" use="required"/>
+                    <xs:attribute name="setting_value_type" type="xs:string" use="required"/>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="id" type="xs:integer" use="required"/>
+            </xs:complexType>
+          </xs:element>          
+        </xs:sequence>
+      <xs:attribute name="id" type="xs:integer" use="required"/>
+      <xs:attribute name="is_active" type="xs:boolean" use="required"/>
+      <xs:attribute name="line_type_number" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  </xs:sequence>
+  <xs:attribute name="user_profile_id" type="xs:integer" use="required"/>
+  <xs:attribute name="user_id" type="xs:integer" use="required"/>
+  </xs:complexType>
+</xs:element></xs:schema>
+

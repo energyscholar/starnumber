@@ -26,6 +26,17 @@
     <url-pattern>/KamServlet</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>CentralDBXMLServlet</servlet-name>
+    <servlet-class>com.starnumber.util.CentralDBXMLServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CentralDBXMLServlet</servlet-name>
+    <url-pattern>/CentralDBServlet</url-pattern>
+  </servlet-mapping>
+
+
   <welcome-file-list>
     <welcome-file>
       jsp/index.jsp
