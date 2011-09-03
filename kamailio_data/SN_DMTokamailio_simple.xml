@@ -1,0 +1,24 @@
+<user_profile user_profile_id="3" user_id="3">								
+ <name>testuser profile 3</name>								
+ <user_name>testuser2</user_name>								
+ <lines>								
+  <line id="1" is_active="true" line_type_number="1">								
+    <description>Inbound SN</description>								
+    <name>My first starnumber</name>								
+	<uri>7827*7829@starnumber.net</uri>								
+	<line_profiles>								
+	  <line_profile id="1">								
+	    <name>Default</name>								
+	    <line_profile_settings>								
+	      <line_profile_setting id="1" setting_number="1" setting_value_type="Int">								
+	  	    <name>Ring On Destination Line ID</name>								
+  		    <value>2</value>								
+	      </line_profile_setting>								
+        </line_profile_settings>								
+      </line_profile>								
+    </line_profiles>								
+  </line>								
+ </lines>								
+</user_profile>								
+
+
